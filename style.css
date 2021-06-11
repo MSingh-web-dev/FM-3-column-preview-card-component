@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* Global designing */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    position: relative;
+    font-size: 15px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    color: hsl(0, 0%, 95%);
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+/* card designing */
+
+.container{
+    max-width: 810px;
+    display: flex;
+}
+.sedan-box{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.suv-box{
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury-box{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.col-box{
+    flex: 1;
+    padding: 24px;
+}
+.content-box img{
+    padding-top: 16px;
+    padding-bottom: 20px;
+}
+.content-box h2{
+    padding-bottom: 20px;
+}
+/* button designing */
+.btn{
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 32px;
+    padding: 16px 32px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid #fff;
+}
+.btn:hover{
+    background-color: transparent;
+    cursor: pointer;
+}
+.sedan-box .btn{
+    color: hsl(31, 77%, 52%);
+}
+.sedan-box .btn:hover{
+    color: #fff;
+}
+.suv-box .btn{
+    color: hsl(184, 100%, 22%);
+}
+.suv-box .btn:hover{
+    color: #fff;
+}
+.luxury-box .btn{
+    color: hsl(179, 100%, 13%);
+}
+.luxury-box .btn:hover{
+    color: #fff;
+}
+
+/* .attribution designing */
+.attribution{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+}
+
+/* Responsive designing for mobile */
+
+@media only screen and (max-width: 375px) {
+    body {
+      background-color: hsl(0, 0%, 95%);
+      height: auto;
+    }
+    h2{
+        color: hsl(0, 0%, 95%);
+    }
+    .container{
+        margin: 40px;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sedan-box{
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 5px;
+    }
+    .suv-box{
+        background-color: hsl(184, 100%, 22%);
+    }
+    .luxury-box{
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+  }
